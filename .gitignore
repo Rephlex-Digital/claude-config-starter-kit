@@ -1,0 +1,17 @@
+# Never commit real secret values
+.env
+.env.local
+.env.*.local
+
+# Never commit a real settings.json (it may contain rendered secrets)
+settings.json
+
+# Backups created by install.sh when overwriting existing files
+*.backup-*
+
+# OS / editor cruft
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
