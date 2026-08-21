@@ -1,8 +1,6 @@
 {
   "_comment": "This is the safe-to-commit template. install.sh renders this to ~/.claude/settings.json with ${ENV_VAR} placeholders replaced by current environment values. NEVER commit a version of this file containing literal secret values.",
 
-  "model": "claude-opus-4-7",
-
   "env": {
     "_comment": "ANTHROPIC_API_KEY is optional — set it only if routing through your own Anthropic Console API key (BYOK). CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1 is the all-in-one privacy switch: disables telemetry, Sentry error reporting, feedback uploads, auto-updater pings, and bug-report channels. Recommended ON for any business workspace.",
     "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
